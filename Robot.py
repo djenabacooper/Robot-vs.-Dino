@@ -1,12 +1,17 @@
-from Weapon import weapon
-class robot:
-    def __init__(self, robot_name, Dino, health):
-        robot_name = ''
-        health = 50
-        active_weapon = weapon
+
+from weapon import Weapon
+class Robot:
+    def __init__(self, robot_name, health):
+        self.robot_name = robot_name
+        self.health = health
+        self.attack_weapon = Weapon('Laser', 20)
         pass
 
-def bot_attack(self, dino,bot_hit,bot_struck):
-        bot_hit = 10
-        bot_struck = True
+    def attack(self, dino_attacked):
+        dino_attacked.health -= self.attack_weapon.attack_power
+
+
+        #create logic for a dino to loose health value based on robot attack
+        #Battlefield.battle_phase.dino.health - Battlefield.battle_phase.bot.active_weapon
+        #print(Battlefield.battle_phase.dino.health)
         pass
