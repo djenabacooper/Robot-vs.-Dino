@@ -8,4 +8,6 @@ class Dinosaur:
 
     def dino_attack(self, robot_attacked):
         robot_attacked.health -= self.attack_power
+        print(f'{robot_attacked.robot_name} is going into "Sleep-mode"! Health points: {robot_attacked.health}')
+
         pass
